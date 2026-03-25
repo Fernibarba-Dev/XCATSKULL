@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Xcatskull</title>
   <meta name="description" content="Xcatskull BCN">
-</head>  
   
   <style>
+    /* Importa la fuente Cinzel de Google Fonts (gratis y optimizada) */
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+    
     body {
       margin: 0;
       padding: 0;
@@ -17,12 +18,11 @@
       flex-direction: column;
       min-height: 100vh;
       background: linear-gradient(180deg, #bb0000, #580202);
-      color: #fff;
-      font-family: Arial, sans-serif;
+      color: #fff; /* Blanco para mejor contraste */
+      font-family: "Cinzel", serif; /* Ahora sí carga Cinzel */
       text-align: center;
       padding-bottom: 0;
     }
-
 
     .main-content {
       flex: 1;
@@ -37,14 +37,14 @@
     h1 {
       font-size: 4rem;
       margin-bottom: 1rem;
-      color: #000;
+      color: #fff; /* Blanco en vez de negro para visibilidad */
       font-family: "Cinzel", serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra más fuerte */
     }
 
     p {
       font-size: 1.2rem;
-      color: #000000;
+      color: #fff; /* Blanco para legibilidad en fondo rojo */
       font-family: "Cinzel", serif;
       margin-bottom: 0.5rem;
     }
@@ -53,16 +53,18 @@
       width: 100%;
       padding: 1rem;
       box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.3); /* Fondo sutil para footer */
+      color: #fff;
     }
 
+    /* Media query CORREGIDA: solo ajusta lo que existe */
     @media screen and (max-width: 768px) {
-  body { font-size: 16px; } 
-  .menu { flex-direction: column; } 
-  .contenido { padding: 10px; } 
-}
-
+      body { font-size: 16px; }
+      h1 { font-size: 2.5rem; } /* Título más pequeño en móvil */
+      .main-content { padding: 1rem; }
+    }
   </style>
-
+</head>
 
 <body>
   <div class="main-content">
@@ -70,9 +72,9 @@
     <p>Sitio web en construcción</p>
     <p>Próximamente...</p>
   </div>
+  
   <footer class="footer">
     <p>© 2026 XCATSKULL | Todos los derechos reservados.</p>
   </footer>
 </body>
-
 </html>
